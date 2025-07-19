@@ -6,3 +6,4 @@ __Este repositório será usado para armazenar meus templates utilizo no dia a d
 * K8s files
 * Scripts (Python, bash)
 * Configs de aplicações
+* Templates APIs
