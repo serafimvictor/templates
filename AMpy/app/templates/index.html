@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fulfillment App</title>
+</head>
+<body>
+    <h2>Fulfillment</h2>
+    <form method="POST">
+        <label>Escolha:</label>
+        <select name="tipo">
+            <option value="PostgreSQL">PostgreSQL</option>
+            <option value="Kafka">Kafka</option>
+        </select><br><br>
+
+        <label>Query (para PostgreSQL):</label><br>
+        <textarea name="query" rows="4" cols="50"></textarea><br><br>
+
+        <label>Tópico (Kafka):</label><br>
+        <input name="topico" /><br><br>
+
+        <label>Palavras-chave (Kafka):</label><br>
+        <input name="palavras" /><br><br>
+
+        <input type="submit" value="Load" />
+    </form>
+
+    <h3>Resultado:</h3>
+    <div>{{ resultado|safe }}</div>
+</body>
+</html>
